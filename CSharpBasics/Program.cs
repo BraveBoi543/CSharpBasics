@@ -8,14 +8,12 @@ namespace CSharpBasics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            MyString();
-
-            Console.ReadLine();
+            Datatypes();
         }
 
         static void MyString()
         {
+
             Console.Write("What year were you born?");
             int yearBorn = Convert.ToInt32(Console.ReadLine());
             Console.Write("What is your age?");
@@ -28,6 +26,28 @@ namespace CSharpBasics
             string theLie = "I am not a ninja.";
             Console.WriteLine("This is my String. " + myString1);
             Console.WriteLine($"Here are two truths and a lie. {theTruth}, {theLie}");
+        }
+
+        static void Datatypes()
+        {
+            int myAge = 99;
+            string name = "Bob the Builder";
+            bool awesome = true;
+            char grade = 'F'; //Chars are single characters. Need single quotes
+            float altitude = 90.265141f; //Requires f at the end
+            Double bankBalance = -4000000;
+            decimal pi = 3.14159216535359m;  //Decimal requires m
+
+
+            //Output
+
+            Console.WriteLine($"myAge = {myAge}.");
+            Console.WriteLine($"string = {name}.");
+            Console.WriteLine($"bool = {awesome}.");
+            Console.WriteLine($"char = {grade}.");
+            Console.WriteLine($"float = {altitude}.");
+            Console.WriteLine($"double = {bankBalance}.");
+            Console.WriteLine($"pi = {pi}.");
         }
     }
 }
